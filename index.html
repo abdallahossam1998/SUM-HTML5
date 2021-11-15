@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> sum&mult</title>
+    <style>
+        #contian {
+            background-color: lightskyblue;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 800px;
+            height: 200px;
+            border-radius: 10px;
+            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
+            padding: left 40px;
+            box-shadow:lightgreen 10px 10px 80px inset;
+        }
+
+        #sum {
+            background-color: tomato;
+            padding-top: 60px;
+            padding-left: 20px;
+            width: 300px;
+            height: 80px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        #multy {
+            background-color: green;
+            padding-top: 60px;
+            padding-left: 20px;
+            width: 300px;
+            height: 80px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contian">
+        <div id="sum">
+            <form oninput="result.value =parseInt(firstnumber.value) + parseInt(secondnumber.value)"> <label>
+                    ADDITION</label> <br> <br> <input type="number" min="0" max="10" value="0" name="firstnumber">+
+                <input type="number" min="0" max="100" value="0" name="secondnumber"> = <output
+                    for="firstnumber secondnumber" name="result" /> </form>
+        </div>
+        <div id="multy">
+            <form oninput="result.value =parseInt(firstnumber.value) * parseInt(secondnumber.value)"> <label>
+                    MULTIPLICAYION</label> <br> <br> <input type="number" min="0" max="10" value="0"
+                    name="firstnumber">* <input type="number" min="0" max="100" value="0" name="secondnumber"> = <output
+                    for="firstnumber secondnumber" name="result" /> </form>
+        </div>
+    </div>
+    </body>
+    </html>
